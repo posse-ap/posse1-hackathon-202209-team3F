@@ -81,13 +81,13 @@ ul {
     width: 100%;
 }
 
-.main-box-inner:before {
+.month-change:before {
     content: "\03c";
     color: #0f71bc;
     /* font-size: 2px; */
 }
 
-.main-box-inner:after {
+.month-change:after {
     content: "\03e";
     color: #0f71bc;
     /* font-size: 2px; */
