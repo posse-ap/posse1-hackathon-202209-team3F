@@ -36,4 +36,45 @@
   color: #666;
 }
 
+
+
+
+
 /* さら担当 */
+
+.main-month-heading {
+    text-align: center;
+    margin-top: 60px;
+}
+.main-month-heading-txt {
+color: chocolate;
+display: inline-block;
+font-family: 'Noto Sans JP';
+}
+
+.main-birthday-card-img {
+display: inline-block;
+width: 70px;
+}
+
+.main-year-heading {
+    color: dimgray;
+    margin-left: 40px;
+    display: inline-block;
+
+}
+
+.main-birthday-slide {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main-birthday-name {
+    color: rgb(174, 160, 97);
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* .main-sub-heading {
+   
+} */
