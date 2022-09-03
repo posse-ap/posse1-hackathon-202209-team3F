@@ -42,9 +42,12 @@
 
 /* さら担当 */
 
+.main-sub-heading {
+    margin: 50px;
+}
 .main-month-heading {
     text-align: center;
-    margin-top: 60px;
+    padding-top: 90px;
 }
 .main-month-heading-txt {
 color: chocolate;
@@ -61,20 +64,30 @@ width: 70px;
     color: dimgray;
     margin-left: 40px;
     display: inline-block;
-
+    background-color: bisque;
+    border-radius: 4px;
+    width: 7%;
+    text-align: center;
 }
 
-.main-birthday-slide {
-    width: 500px;
+.main-birthday-slide-img {
+    width: 30%;
     margin: 0 auto;
 }
 
+.main-birthday-slide {
+    text-align: center;
+}
 .main-birthday-name {
     color: rgb(174, 160, 97);
     display: inline-block;
     margin-left: 20px;
 }
 
+.main-birthday-comment {
+    margin: 70px;
+    color: rgb(106, 101, 84);
+}
 /* .main-sub-heading {
    
 } */
