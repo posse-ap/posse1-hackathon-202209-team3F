@@ -39,7 +39,12 @@
 
 
   .main-event-heading {
-      margin-top: 20px;
+      margin: 100px;
+      color: darkgreen;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-image: linear-gradient(rgba(0,0,0,0) 70%, rgb(148, 211, 155) 100%);
+
   }
   .main-event-subheading-img {
     border-bottom-right-radius: 100px;
@@ -55,19 +60,37 @@
 	text-align: center;
 }
 
-.main-event-subheading　::before,
-.main-event-subheading　::after {
+.main-event-subheading::before,
+.main-event-subheading::after {
 	content: '';
 	width: 70px;
 	height: 3px;
 	background-color: #e3bf00;
 }
 
-.main-event-subheading ::before {
+.main-event-subheading::before {
 	margin-right: 30px;
+	transform: rotate(35deg)
+}
+.main-event-subheading::after {
+	margin-left: 30px;
 	transform: rotate(-35deg)
 }
-.main-event-subheading ::after {
-	margin-left: 30px;
-	transform: rotate(35deg)
+
+.main-next-event {
+    display: flex;
+}
+
+.main-event-title {
+    font-size: 70px;
+    color: rgb(30, 72, 169);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+
+.main-event-contents {
+    margin: 10%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
