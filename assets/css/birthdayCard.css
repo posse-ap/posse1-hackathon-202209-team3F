@@ -40,6 +40,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /* さら担当 */
 
 
@@ -82,7 +91,9 @@
 .main-month-heading-txt {
 color: chocolate;
 display: inline-block;
-font-family: 'Noto Sans JP';
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 70px;
 }
 
 .main-birthday-card-img {
@@ -91,20 +102,23 @@ width: 70px;
 }
 
 .main-year-heading {
-    color: rgb(211, 198, 198);
+    color: rgb(204, 144, 15);
     margin-left: 17%;
     display: inline-block;
-    background-color: rgb(112, 94, 72);
+    background-color: rgb(253, 251, 249);
     border-radius: 4px;
     width: 7%;
     text-align: center;
     border-style: solid;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .main-birthday-slide-img {
     width: 35%;
     margin: 0 auto;
     border-radius: 10px;
+    border: 2px solid #bc6060;
 }
 
 .main-birthday-slide {
@@ -114,20 +128,28 @@ width: 70px;
     color: rgb(174, 160, 97);
     display: inline-block;
     margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .main-birthday-comment {
     margin-top: 20px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 20%;
     color: rgb(106, 101, 84);
     border: dotted;
     border-color: rgb(225, 208, 186);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 30px;
 }
 
 .main-birthday-heading-comment {
   margin-left: 20%;
   color: brown;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .main-good-btn {
     margin-left: 60%;
@@ -135,6 +157,8 @@ width: 70px;
     border-radius: 4px;
     border-color: rgb(231, 75, 184);
     color: rgb(43, 40, 40);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 
