@@ -40,50 +40,6 @@
 
 /* ゆうだいのcss */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ul {
     list-style-type: none;
     margin-block-start: 0em;
@@ -97,6 +53,13 @@ ul {
     font-size: 36px;
     font-weight: bold;
     line-height: 1.5;
+    text-shadow: 1px 2px 3px;
+    padding: 0 20px;
+}
+
+main {
+    width: 100%;
+    display: block;
 }
 
 .main-containor {
@@ -113,6 +76,7 @@ ul {
     box-sizing: border-box;
     padding: 0 24px;
     max-width: 100%;
+    width: 100%;
 }
 
 .main-year-box {
@@ -125,13 +89,19 @@ ul {
     width: 100%;
 }
 
-.month-change:before {
+.month-change {
+    display: flex;
+    margin: 20px;
+    gap: 50%;
+}
+
+.month-changeーbefore:before {
     content: "\03c";
     color: #0f71bc;
     /* font-size: 2px; */
 }
 
-.month-change:after {
+.month-changeーnext:after {
     content: "\03e";
     color: #0f71bc;
     /* font-size: 2px; */
@@ -173,6 +143,7 @@ ul {
     /* .main-box-inner {
         grid-template-columns: repeat(3, 1fr);
     } */
+    /* .br {
+        display: none;
+    } */
 }
-
-
