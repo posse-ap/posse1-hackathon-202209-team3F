@@ -41,6 +41,8 @@ let themes = [
 //     mainTheme.style.backgroundColor ="#EFF2F5"
 //     };
 
+// for (let i =0 ; i<themes.length i++);
+
 let ele = document.getElementById(`mainSpeech`);
 document.getElementById(`mainTheme`).onclick = () =>{
   if(ele.style.display==='none'){
@@ -49,4 +51,19 @@ document.getElementById(`mainTheme`).onclick = () =>{
     ele.style.display = 'none';
   }
 }
+
+$("#mainTheme").click(function() {
+  if($("#mainSpeech").css("display") === "none"){
+    $("#mainSpeech").slideDown("slow",function(){
+      $("#mainTheme").text("▼ ");
+    });
+  }else{
+    $("#mainSpeech").slideUp("slow",function(){
+      $("#mainSpeech").text("▲ ");
+    });
+  };
+  
+});
+
+// $("#mainSpeech").slideDown(1000);
 
