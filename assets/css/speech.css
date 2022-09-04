@@ -39,10 +39,58 @@
 
 
 /* いつきのテーマ作るとこ*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-speech-heading{
-  margin-top: 8%;
+  margin-top: 10%;
   padding-left: 5%;
   font-size: 50px;
+  margin-bottom: 4%;
 }
 
 .main-theme{
@@ -50,13 +98,68 @@
   border: solid;
   border-color:black;
   cursor: pointer;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
 }
 
 .main-theme>p{
-  font-size: 33px;
+  font-size: 25px;
+  height: 4%;
+  font-weight: bolder;
 }
 
 /* ゆうやの押した後のコメント欄づくり */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-speech-img{
   border: solid 1px black;
   border-radius: 50%;
