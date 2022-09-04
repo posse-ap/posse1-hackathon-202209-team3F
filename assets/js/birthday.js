@@ -2,7 +2,7 @@
 
 
 
-const picture1Array = ["assets/img/birthday-itsuki.jpeg", 'assets/img/posseロゴ-removebg-preview.png'];
+const picture1Array = ["assets/img/birthday-itsuki.png", 'assets/img/posseロゴ-removebg-preview.png'];
 let num = -1;
 
 function slideShow1() {
@@ -294,3 +294,14 @@ function outsideClose(e) {
         modal.style.display = 'none';
     }
 }
+
+
+$(".hamburger").click(function() { //ボタンがクリックされたら
+    $(this).toggleClass('active'); //ボタン自身に activeクラスを付与し
+    $(".hamburger-content").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hamburger-content a").click(function() { //ナビゲーションのリンクがクリックされたら
+    $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
+    $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
+});
