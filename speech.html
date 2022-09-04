@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/speech.css">
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
 </head>
 <body>
   <header class="header-inner">
@@ -53,10 +54,11 @@
 
     <h1 class="main-speech-heading">〜100秒スピーチ〜</h1>
     <div class="main-content">
-      <div class="main-theme"><p>① 仲間の居場所つくらずして自分の居場所なし</p></div>
+      <div class="main-theme" id="mainTheme"><p>①仲間の居場所つくらずして自分の居場所なし</p></div>
     </div>
+      <!-- <div class="main-theme"><p>① 仲間の居場所つくらずして自分の居場所なし</p></div> -->
     <!-- ゆうやが押した後のカードを作る -->
-    <div class="main-speech-inner" id="">
+    <div class="main-speech-inner" id="mainSpeech">
       <div class="main-speech-box">
         <div class="main-speech-people">
           <div class="main-speech-img"><img src="./assets/img/S__14983341.jpg" alt="face"></div>
@@ -114,12 +116,13 @@
           </div>
           <button class="main-good-btn">いいね</button>
         </div>
-      </div>
-
+      </div> -->
     </div>
   </main>
   <footer>
     <!-- とりあえず保留 -->
   </footer>
+  <script src="assets/js/speech.js"></script>
 </body>
+
 </html>

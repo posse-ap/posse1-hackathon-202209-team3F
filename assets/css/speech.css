@@ -87,22 +87,27 @@
 
 
 .main-speech-heading{
-  margin-top: 8%;
+  margin-top: 10%;
   padding-left: 5%;
   font-size: 50px;
+  margin-bottom: 4%;
 }
 
 .main-theme{
   text-align: center;
-  padding: 0;
-  margin: 0;
-  border: double 5px ;
+  border: solid;
+  border-color:black;
   cursor: pointer;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  /* height: 30px; */
 }
 
 .main-theme>p{
-  margin: 0%;
-  padding: 0%;
+  font-size: 25px;
+  height: 4%;
+  font-weight: bolder;
 }
 
 /* ゆうやの押した後のコメント欄づくり */
@@ -152,7 +157,9 @@
 
 
 
-
+.main-speech-inner{
+  display: none;
+}
 
 .main-speech-box{
   margin-top: 100px;
