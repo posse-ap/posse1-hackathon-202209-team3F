@@ -57,7 +57,7 @@
   .main-event-subheading-img {
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
-    width: 37%;
+    width: 90%;
     max-height:  700px;;
 } 
 
@@ -89,6 +89,8 @@
 
 .main-next-event {
     display: flex;
+    display: grid;
+
 }
 
 .main-event-title {
@@ -124,6 +126,7 @@
     background: #ffcc75;
     border-radius: 10%;
     box-sizing: border-box;
+    display: grid;
   }
   
   .main-event-comment:before {
@@ -136,3 +139,24 @@
     border-right: 15px solid #ffcc75;
     z-index: 0;
   }
+
+  @media (min-width: 720px)
+  {
+    .main-next-event {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+@media (min-width: 720px)
+{
+    .main-event-comment {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 470px)
+{
+    .main-event-comment{
+        padding-right: 100px;
+    }
+}
