@@ -1,4 +1,5 @@
 // ここから10個のテーマ配列
+'use strict';
 
 let themes = [
   "① 仲間の居場所つくらずして自分の居場所なし",
@@ -15,11 +16,11 @@ let themes = [
 
 
 
-const speech = document.getElementById(`mainContent`);
+// const speech = document.getElementById('mainContent');
 
 
-for (let i = 0; i < themes.length; i++) {
-  speech.innerHTML += '<div class="main-theme" id="mainTheme"><p>' + themes[i] + '</p></div>';
+// for (let i = 0; i < themes.length; i++) {
+  // speech.innerHTML += '<div class="main-theme" id="mainTheme"><p>' + themes[i] + '</p></div>';
 //   document.getElementById("mainSpeechInner").style.display ="none";
 //   function clickBtn1(){
 //     const mainSpeechInner = document.getElementById("mainSpeechInner");
@@ -31,12 +32,21 @@ for (let i = 0; i < themes.length; i++) {
 // document.getElementById(`themes-` + i).onclick = function()  {
 //     mainTheme.style.backgroundColor ="#EFF2F5"
 //     };
-}
+// };
 
 // let mainTheme = document.getElementById(mainTheme)
 
 
-document.getElementById(mainContent).onclick = function()  {
-    mainTheme.style.backgroundColor ="#EFF2F5"
-    };
+// document.getElementById(mainContent).onclick = function()  {
+//     mainTheme.style.backgroundColor ="#EFF2F5"
+//     };
+
+let ele = document.getElementById(`mainSpeech`);
+document.getElementById(`mainTheme`).onclick = () =>{
+  if(ele.style.display==='none'){
+    ele.style.display = 'block';
+  }else{
+    ele.style.display = 'none';
+  }
+}
 
