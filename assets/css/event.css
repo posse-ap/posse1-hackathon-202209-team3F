@@ -1,3 +1,7 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .header-inner{
     align-items: center;
     background-color: #fff;
@@ -47,7 +51,6 @@
 
 
 
-
 .main-event-heading {
     margin: 100px;
     margin-left: 2%;
@@ -57,24 +60,27 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(148, 211, 155) 95%);
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     width: 30%;
 
 }
 
 .main-event-subheading-img {
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
-    width: 90%;
-    max-height: 700px;
-    ;
+    
+    width: 80%;
+    height: 600px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    margin-top: 10%;
+    margin-left: 100px
+    
 }
 
 .main-event-subheading  {
-	display: flex;
+    display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 26px;
+	font-size: 40px;
+    font-weight: 600;
 	text-align: center;
     margin-top: 0%;
 }
@@ -83,12 +89,12 @@
 .main-event-subheading::after {
 	content: '';
 	width: 70px;
-	height: 3px;
-	background-color: #e3bf00;
+	height: 2px;
+	background-color:  rgb(131, 134, 131);
 }
 
 .main-event-subheading::before {
-	margin-right: 30px;
+    margin-right: 30px;
 	transform: rotate(35deg)
 }
 .main-event-subheading::after {
@@ -99,44 +105,52 @@
 .main-next-event {
     display: flex;
     display: grid;
-
 }
 
 .main-event-title {
-    font-size: 50px;
-    color: rgb(30, 72, 169);
+    font-size: 45px;
+    display: inline-block;
+    color: darkgreen;;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     padding: 0.2em 0;/*上下の余白*/
-    border-top: solid 3px #364e96;/*上線*/
-    border-bottom: solid 3px #364e96;/*下線*/
+    border-top: solid 1px rgb(199, 207, 199);/*上線*/
+    border-bottom: solid 1px rgb(199, 207, 199);/*下線*/
 }
 
 .main-event-contents {
     margin: 7%;
     margin-top: 2%;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.main-event-date{
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.main-event-date span{
+    color: rgb(235, 176, 74);
+    
 }
 
 .main-event-comment {
     position: relative;
     display: inline-block;
-    margin: 1.5em 0 1.5em 15px;
-    padding: 0 5px;
-    height: 150px;
-    line-height: 90px;
-    text-align: center;
-    color: #FFF;
+    margin: 10% 0 1.5em 15px;
+    padding: 15px;
+    line-height: 1.5em;
+    text-align: left;
+    color: white;
     font-size: 20px;
-    font-weight: bold;
-    background: #ffcc75;
-    border-radius: 30px;
+    border-radius: 3px;
+    background: rgb(43, 89, 58);
+    /* border-radius: 30px; */
     box-sizing: border-box;
     display: grid;
-    padding: 0 16px 0 0;
 }
+
+
 
 
 .main-event-comment:before {
@@ -146,7 +160,7 @@
     left: -25px;
     margin-top: -15px;
     border: 15px solid transparent;
-    border-right: 15px solid #ffcc75;
+    border-right: 15px solid rgb(41, 87, 56);
     z-index: 0;
 }
 
@@ -156,32 +170,45 @@
 
 
 /* ゆうや担当 */
+.main-wrapper h1{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    justify-content: center;
+	align-items: center;
+	font-size: 40px;
+    font-weight: 600;
+	text-align: center;
+    margin-top: 10%;
+}
 /*tabの形状*/
 .tab{
 	display: flex;
 	flex-wrap: wrap;
-    font-size: 40px;
+    font-size: 30px;
     justify-content: space-around;
+
 }
 ul{
     list-style: none;
     margin-top: 5%;
+    border-top: 2px black;
+
 }
 
 .tab li a{
-    color: black;
+    color: rgb(23, 23, 23);
 	display: block;
-	background:#ddd;
+	/* background:#ddd; */
 	margin:0 2px;
 	padding:10px 20px;
     text-decoration: none;
-    
+
 } 
     
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
     background:#fff;
-    /* border-bottom: 5px solid orange; */
+    border-bottom: 3px solid rgb(230, 177, 78);
 }
 
 
@@ -283,7 +310,7 @@ ul{
 
 .event-barner{
     display: flex;
-    background-color: #364e96;
+    background-color: white;
     border-radius: 15px;
     position: fixed;
     bottom: 10px;
@@ -291,7 +318,7 @@ ul{
     padding: 6px 70px;
     justify-content: center;
     padding: 0.3% 0.3% 0.3% 0.3%;
-    border: solid 1px;
+    border: solid 1px gray;
     width: 30%;
     height: 30%;
 }
