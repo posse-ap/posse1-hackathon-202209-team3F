@@ -9,31 +9,38 @@
     left: 0;
     right: 0;
     z-index: 10;
-  }
-  
-  .header-nav{
+
+}
+
+
+.header-nav{
+
     margin-left: auto;
     align-items: center;
     display: flex;
-  }
-  
-  .header-title{
+}
+
+
+.header-title{
     font-weight: bold;
     display: flex;
     list-style: none;
     gap: 32px;  
-  }
-  
-  .header-icon{
+}
+
+.header-icon{
+
     display: flex;
     list-style: none;
     gap: 16px;
-  }
-  
-  .header-nav li a{
+}
+
+
+.header-nav li a{
+
     text-decoration: none;
     color: #666;
-  }
+}
 
 
 
@@ -41,25 +48,27 @@
 
 
 
-  .main-event-heading {
-      margin: 100px;
-      margin-left: 2%;
-      color: darkgreen;
+.main-event-heading {
+    margin: 100px;
+    margin-left: 2%;
+    color: darkgreen;
     font-family: sans-serif;
     font-weight: lighter;
-    background-image: linear-gradient(rgba(0,0,0,0) 95%, rgb(148, 211, 155) 95%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(148, 211, 155) 95%);
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 20px;
     width: 30%;
 
-  }
-  .main-event-subheading-img {
+}
+
+.main-event-subheading-img {
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
     width: 90%;
-    max-height:  700px;;
-} 
+    max-height: 700px;
+    ;
+}
 
 .main-event-subheading  {
 	display: flex;
@@ -127,9 +136,10 @@
     box-sizing: border-box;
     display: grid;
     padding: 0 16px 0 0;
-  }
-  
-  .main-event-comment:before {
+}
+
+
+.main-event-comment:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -138,14 +148,124 @@
     border: 15px solid transparent;
     border-right: 15px solid #ffcc75;
     z-index: 0;
-  }
+}
 
-  @media (min-width: 720px)
-  {
+
+
+
+@media (min-width: 720px)
+{
+
+    .main-next-event {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ゆうや担当 */
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+    font-size: 40px;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    margin-top: 5%;
+}
+
+.tab li a{
+    color: black;
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+    text-decoration: none;
+
+
+
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+    /* border-bottom: 5px solid orange; */
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	background: #fff;
+	padding:50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.slider{
+    margin: 50px auto;
+    width: 50%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+
+    }
+}
+
+
+
+
+
+
+/* ゆうや担当終わり */
+
+@media (min-width: 720px)
+{
     .main-next-event {
         grid-template-columns: repeat(2,1fr);
     }
-  }
+}
 
 @media (min-width: 720px)
 {
@@ -161,179 +281,21 @@
     }
 }
 
-        /*カレンダー*/
-        
-        #calendar {
-          text-align: center;
-          margin-left: 7%;
-          margin-right: 7%;
-      }
-      
-      .calendar-header{
-        margin-left: 7%;
-      }
-      table {
-          outline: 2px solid #ddd;
-          border-collapse: collapse;
-          width: 100%;
-      }
-      
-      th {
-          color: #000;
-      }
-      
-      th,
-      td {
-          outline: 1px solid #ddd;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          text-align: center;
-      }
-      /*日曜日*/
-      
-      td:first-child {
-          color: red;
-      }
-      /*土曜日*/
-      
-      td:last-child {
-          color: blue;
-      }
-      /*前後月の日付*/
-      
-      td.disabled {
-          color: #ccc;
-      }
-      /*本日*/
-      
-      td.today {
-          background-color: #D65E72;
-          color: #fff;
-      }
-      /*ボタン*/
-      
-      #next-prev-button {
-          position: relative;
-          margin-left: 7%;
-          margin-right: 7%;
-      }
-      
-      #next-prev-button button {
-          cursor: pointer;
-          background: #B78D4A;
-          color: #fff;
-          border: 1px solid #B78D4A;
-          border-radius: 4px;
-          font-size: 1rem;
-          padding: 0.5rem 2rem;
-          margin: 1rem 0;
-      }
-      
-      #next-prev-button button:hover {
-          background-color: #D4BB92;
-          border-color: #D4BB92;
-      }
-      
-      #prev {
-          float: left;
-      }
-      
-      #next {
-          float: right;
-      }
-      
-      body {
-          font-family: serif;
-          font-size: 16px;
-          line-height: 1.6;
-      }
-      
-      .button {
-          background: lightblue;
-          color: #fff;
-          border: 0;
-          font-size: 13px;
-          border-radius: 5px;
-          font-weight: 900;
-          position: relative;
-          margin: 0 auto;
-          font-family: serif;
-      }
-      
-      .button:hover {
-          background: lightcoral;
-          cursor: pointer;
-      }
-      
-      .modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          overflow: auto;
-          background-color: rgba(0, 0, 0, 0.5);
-      }
-      
-      .modal-content {
-          background-color: #f4f4f4;
-          margin: 20% auto;
-          width: 50%;
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-          animation-name: modalopen;
-          animation-duration: 1s;
-      }
-      
-      @keyframes modalopen {
-          from {
-              opacity: 0
-          }
-          to {
-              opacity: 1
-          }
-      }
-      
-      .modal-header h1 {
-          margin: 1rem 0;
-      }
-      
-      .modal-header {
-          background: lightblue;
-          padding: 3px 15px;
-          display: flex;
-          justify-content: space-between;
-      }
-      
-      .modalClose {
-          font-size: 2rem;
-      }
-      
-      .modalClose:hover {
-          cursor: pointer;
-      }
-      
-      .modal-body {
-          padding: 10px 20px;
-          color: black;
-      }
+.event-barner{
+    display: flex;
+    background-color: #364e96;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 70px;
+    justify-content: center;
+    padding: 0.3% 0.3% 0.3% 0.3%;
+    border: solid 1px;
+    width: 30%;
+    height: 30%;
+}
 
-      .event-barner{
-        display: flex;
-        background-color: #364e96;
-        border-radius: 15px;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        padding: 6px 70px;
-        justify-content: center;
-        padding: 0.3% 0.3% 0.3% 0.3%;
-        border: solid 1px;
-        width: 30%;
-        height: 30%;
-    }
-
-    footer{
-        height: 200px;
-    }
+footer{
+    height: 200px;
+}
