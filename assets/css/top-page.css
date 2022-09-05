@@ -309,7 +309,7 @@ html {
 }
 
 .button {
-    background: lightblue;
+    background: rgba(93, 87, 87, 0.2);
     color: #fff;
     border: 0;
     font-size: 13px;
@@ -317,11 +317,12 @@ html {
     font-weight: 900;
     position: relative;
     margin: 0 auto;
-    font-family: serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    ;
 }
 
 .button:hover {
-    background: lightcoral;
+    background: lightblue;
     cursor: pointer;
 }
 
