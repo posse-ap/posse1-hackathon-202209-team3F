@@ -8,6 +8,12 @@ li {
     list-style-type: none;
 }
 
+li>a {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #344449;
+}
+
 .header-inner {
     align-items: center;
     background-color: #fff;

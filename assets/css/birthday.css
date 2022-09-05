@@ -398,7 +398,8 @@
         
         li>a {
             font-family: 'Noto Sans JP', sans-serif;
-            ;
+            text-decoration: none;
+            color: #344449;
         }
         
         .modal {
