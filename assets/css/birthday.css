@@ -153,6 +153,11 @@
                 display: none;
             }
         }
+        
+        .header-none {
+            display: flex;
+            gap: 30px;
+        }
         /*tabの形状*/
         
         .tab {
@@ -567,6 +572,13 @@
             font-size: larger;
             animation: boyoboyo 2s ease-out infinite;
             opacity: 1;
+        }
+        
+        .information2 {
+            font-size: larger;
+            animation: boyoboyo 2s ease-out infinite;
+            opacity: 1;
+            margin-top: 50px;
         }
         
         @keyframes boyoboyo {
