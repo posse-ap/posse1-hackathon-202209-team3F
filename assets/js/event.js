@@ -41,3 +41,13 @@ $('.slider').slick({
     autoplaySpeed:5000,
     dots:true,
 });
+
+
+$(document).ready(function() {
+$('.tooltip').tooltipster({
+animation: 'fade',
+delay: 200,
+theme: 'tooltipster-light'
+});
+});
+

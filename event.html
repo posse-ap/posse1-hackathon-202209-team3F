@@ -8,6 +8,7 @@
   <title>リアイベページ</title>
   <link rel="stylesheet" href="./assets/slick/slick.css">
   <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+  <link rel="stylesheet" href="./assets/dist/css/tooltipster.bundle.min.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/event.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,52 +69,70 @@
   <div class="main-wrapper">
     <h1>ー Album ー</h1>
     <ul class="tab">
-      <li><a href="#hack">ハッカソン</a></li>
-      <li><a href="#summer">夏のDX</a></li>
-      <li><a href="#work">かだちょき</a></li>
+      <li class="tooltip" title="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"><a href="#hack">ハッカソン</a></li>
+      <li class="tooltip" title="aaaaaaaaaaaa"><a href="#summer">夏のDX</a></li>
+      <li class="tooltip" title="aaaaaaaaaaaa"><a href="#work">かだちょき</a></li>
     </ul>
 
     <div id="hack" class="area">
-      <ul class="slider">
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_0.jpg" alt="image01"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_1.jpg" alt="image02"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_2.jpg" alt="image03"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_0.jpg" alt="image04"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_0_0.jpg" alt="image05"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_1.jpg" alt="image06"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_1_0.jpg" alt="image07"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_2.jpg" alt="image08"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_3.jpg" alt="image09"></a></li>
-      </ul>
+      <div class="main-outer">
+        <ul class="slider">
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_0.jpg" alt="image01"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_1.jpg" alt="image02"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220903 第5回ハッカソン_220905_2.jpg" alt="image03"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_0.jpg" alt="image04"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_0_0.jpg" alt="image05"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_1.jpg" alt="image06"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_1_0.jpg" alt="image07"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_2.jpg" alt="image08"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220904 第5回ハッカソン_220905_3.jpg" alt="image09"></a></li>
+        </ul>
+        <div class="main-comment">
+          <h2>今回初めてイベントに参加してくれた<span>さら</span></h2>
+          <p>新人ハッカソンに参加していなかった分、HTML.CSSの理解が浅く、自信がなかったけど、それでも自分が活躍できる場所があったと同時に、周りの人のレベルの高さを目の当たりにして頑張らなきゃといい刺激をもらうことができた。また、初めて自分で考えながら制作物を作ってみて、カリキュラムでは味わうことのできない達成感を感じることができた。</p>
+        </div>
+      </div>
       <!--/area-->
     </div>
     <div id="summer" class="area">
+      <div class="main-outer">
+
       
-      <ul class="slider">
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_0.jpg" alt="image01"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_1.jpg" alt="image02"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_2.jpg" alt="image03"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_3.jpg" alt="image04"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_3_0.jpg" alt="image05"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_4.jpg" alt="image06"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_6.jpg" alt="image07"></a></li>
-        
-        
-      </ul>
+        <ul class="slider">
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_0.jpg" alt="image01"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_1.jpg" alt="image02"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_2.jpg" alt="image03"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_3.jpg" alt="image04"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_3_0.jpg" alt="image05"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_4.jpg" alt="image06"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_夏のDX😍_220905_6.jpg" alt="image07"></a></li>
+          
+        </ul>
+        <div class="main-comment">
+          <h2>今回初めてイベントに参加してくれた<span>ゆうや</span></h2>
+          <p>最初横モクのメンバーが行くと言っていたので行こうと思ったが、みんないけなくなり、めちゃくちゃ迷った。行ってみて感じたのは、先輩はめちゃくちゃ優しくて、話しかけてくれるし、しゃべったことのない人ともお話しすることができて、とてもいい時間を過ごすことができた。悩んでいるなら行ってみると、絶対楽しいと思う！</p>
+        </div>
+      </div>
       <!--/area-->
     </div>
     <div id="work" class="area">
-      <ul class="slider">
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_0.jpg" alt="image01"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_1.jpg" alt="image02"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_2.jpg" alt="image03"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_3.jpg" alt="image04"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_4.jpg" alt="image05"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_5.jpg" alt="image06"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_6.jpg" alt="image07"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_7.jpg" alt="image08"></a></li>
-        <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_8.jpg" alt="image09"></a></li>
-      </ul>
+      <div class="main-outer">
+        <ul class="slider">
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_0.jpg" alt="image01"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_1.jpg" alt="image02"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_2.jpg" alt="image03"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_3.jpg" alt="image04"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_4.jpg" alt="image05"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_5.jpg" alt="image06"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_6.jpg" alt="image07"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_7.jpg" alt="image08"></a></li>
+          <li><a href="#"><img src="./assets/img/LINE_ALBUM_20220824 かだちょき🦀_220905_8.jpg" alt="image09"></a></li>
+        </ul>
+        <div class="main-comment">
+          <h2>今回始めてイベントに参加してくれた<span>いつき</span></h2>
+          <p>参加する前は初対面の人が多く、馴染めるのか不安だったが、周りの三期生が積極的に声をかけてくれたり、みきはるさんがつきっきりでプログラミングを教えてくれてめちゃくちゃ課題が進んだので言ってよかったなと思っている。</p>
+        </div>
+      </div>
       <!--/area-->
     </div>
   </div>
@@ -142,6 +161,7 @@
   <script src="./assets/js/jquery-3.6.1.min.js"></script>
 
   <script src="./assets/slick/slick.min.js"></script>
+  <script src="./assets/dist/js/tooltipster.bundle.min.js"></script>
   <script src="./assets/js/event.js"></script>
 </body>
 
