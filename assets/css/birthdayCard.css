@@ -56,6 +56,7 @@
 .main-month-heading {
     text-align: center;
     padding-top: 90px;
+    background-color: lightblue;
 }
 .main-month-heading-txt {
 color: rgb(28, 17, 139);
@@ -151,3 +152,53 @@ width: 70px;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+
+
+
+
+
+
+/* @charset "utf-8"; */
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+.good-counter{
+  font-size: 20px;
+}
+
+.good-number{
+}
+#counter{
+    font-size: 20pt;
+}
+ 
+#btnAdd{
+    font-size: 20pt;
+    padding: 1% 2% 1% 2%;
+    background-color: #c7d436;
+    border-radius: 8px;
+}
+
+
+.barner-7{
+  display: flex;
+background-color: greenyellow;
+border-radius: 15px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+padding: 6px 70px;
+justify-content: center;
+padding: 2% 6% 2% 3%;
+}
+
+
+
+
+
+
+
+

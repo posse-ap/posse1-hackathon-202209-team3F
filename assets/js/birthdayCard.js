@@ -8,6 +8,8 @@
 //   button.textContent = `いいね ${event.detail}`;
 // });
 
+
+
 let Jan = ['']   
 let Feb = ['']
 let Mar = ['']
@@ -81,7 +83,18 @@ document.getElementById(`birthdaycardJan`);
 
 for (let i =0; i < Jan.length[-1]; i++){
 birthdaycardjan.innerHTML +=
-    '<div class="main-birthday-card">'
+//     '<div class="main-birthday-card">'
+// +      '<div class="main-sub-heading">'
+// +         '<h1 class="main-year-heading">'+Jan[i]+'日</h1>'
+// +          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'from '+JanNameFrom[i]+'</h2>'
+// +      '</div>'
+// +      '<div class="main-birthday-slide"><img src="./assets/img/'+JanImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
+// +        '<button class="main-good-btn">いいね</button>'
+// +        '<h3 class="main-birthday-heading-comment">お祝いコメント</h3>'
+// +        '<div class="main-birthday-comment">'+JanComment[i]+''
+// +        '</div>'
+// +    '</div>'
+'<div class="main-birthday-card">'
 +      '<div class="main-sub-heading">'
 +         '<h1 class="main-year-heading">'+Jan[i]+'日</h1>'
 +          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'from '+JanNameFrom[i]+'</h2>'
@@ -165,7 +178,8 @@ for (let i =0; i < May.length [-1]; i++){
   +        '<div class="main-birthday-comment">'+MayComment[i]+''
   +        '</div>'
   +    '</div>'
-  }
+  
+}
 
 
 
@@ -201,7 +215,8 @@ birthdaycardjly.innerHTML +=
 +         '<h2 class="main-birthday-name">3.0期生　to '+JlyNameTo[i]+ 'from '+JlyNameFrom[i]+'</h2>'
 +      '</div>'
 +      '<div class="main-birthday-slide"><img src="./assets/img/'+JlyImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
-+        '<button class="main-good-btn">いいね</button>'
++        '<P class="good-counter">みんなのいいね数:<p id="counter" class ="good-number">10</p></p>'
++      '<p><input type="button" id="btnAdd" value="いいね"></p>'
 +        '<h3 class="main-birthday-heading-comment">お祝いコメント</h3>'
 +        '<div class="main-birthday-comment">'+JlyComment[i]+''
 +        '</div>'
@@ -213,15 +228,27 @@ document.getElementById(`birthdaycardAug`);
 
 for (let i =0; i < Aug.length ; i++){
 birthdaycardaug.innerHTML +=
-    '<div class="main-birthday-card">'
+//     '<div class="main-birthday-card">'
+// +      '<div class="main-sub-heading">'
+// +         '<h1 class="main-year-heading">'+Aug[i]+'日</h1>'
+// +         '<h2 class="main-birthday-name">3.0期生　to '+AugNameTo[i]+ 'from '+AugNameFrom[i]+'</h2>'
+// +      '</div>'
+// +      '<div class="main-birthday-slide"><img src="./assets/img/'+AugImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
+// +        '<button class="main-good-btn">いいね</button>'
+// +        '<h3 class="main-birthday-heading-comment">お祝いコメント</h3>'
+// +        '<div class="main-birthday-comment">'+AugComment[i]+''
+// +        '</div>'
+// +    '</div>'
+
+'<div class="main-birthday-card" id="Aug">'
 +      '<div class="main-sub-heading">'
-+         '<h1 class="main-year-heading">'+Aug[i]+'日</h1>'
-+         '<h2 class="main-birthday-name">3.0期生　to '+AugNameTo[i]+ 'from '+AugNameFrom[i]+'</h2>'
++         '<h1 class="main-year-heading">'+Jan[i]+'日</h1>'
++          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'from '+JanNameFrom[i]+'</h2>'
 +      '</div>'
-+      '<div class="main-birthday-slide"><img src="./assets/img/'+AugImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
++      '<div class="main-birthday-slide"><img src="./assets/img/'+JanImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
 +        '<button class="main-good-btn">いいね</button>'
 +        '<h3 class="main-birthday-heading-comment">お祝いコメント</h3>'
-+        '<div class="main-birthday-comment">'+AugComment[i]+''
++        '<div class="main-birthday-comment">'+JanComment[i]+''
 +        '</div>'
 +    '</div>'
 }
@@ -283,7 +310,7 @@ birthdaycardnov.innerHTML +=
 const birthdaycarddec =
 document.getElementById(`birthdaycardDec`);
 
-for (let i =0; i < Dec.length [-1]; i++){
+for (let i =0; i < Dec.length [+1]; i++){
 birthdaycarddec.innerHTML +=
     '<div class="main-birthday-card">'
 +      '<div class="main-sub-heading">'
@@ -291,7 +318,8 @@ birthdaycarddec.innerHTML +=
 +         '<h2 class="main-birthday-name">3.0期生　to '+DecNameTo[i]+'from '+DecNameFrom[i]+'</h2>'
 +      '</div>'
 +      '<div class="main-birthday-slide"><img src="./assets/img/'+DecImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
-+        '<button class="main-good-btn">いいね</button>'
++        '<p>みんなのいいね数：<span id ="count">7</span><p>'
++        '<input type = "button" value = "いいね" onClick="count();"> '
 +        '<h3 class="main-birthday-heading-comment">お祝いコメント</h3>'
 +        '<div class="main-birthday-comment">'+DecComment[i]+''
 +        '</div>'
@@ -303,8 +331,23 @@ birthdaycarddec.innerHTML +=
 
 
 
-const button = document.querySelector('button');
 
-button.addEventListener('click', event => {
-  button.textContent = `いいね ${event.detail}`;
-});
+
+
+let counter, btnAdd;
+  let n;
+   
+  function addCount(){
+      n++;
+      counter.innerHTML = n;
+  }
+   
+  window.addEventListener("load", ()=>{
+      counter = document.getElementById("counter");
+      btnAdd = document.getElementById("btnAdd");
+      n = 10;
+   
+      btnAdd.addEventListener("click", addCount);
+  });
+
+
