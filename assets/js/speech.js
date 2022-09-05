@@ -1,6 +1,12 @@
 // ここから10個のテーマ配列
 'use strict';
 
+
+$(
+    function() {
+
+    });
+
 const information = [{
         theme: '①　仲間の居場所つくらずして自分の居場所なし',
         img: './assets/img/speech-1.svg',
@@ -185,7 +191,7 @@ for (let i = 0; i < information.length; i++) {
         `<div class="main-theme" id="mainTheme"  data-theme = "${i}"><p>${information[i].theme}</p></div>` +
         `</div>` +
         `<div class="main-speech-inner" id="mainSpeech${i}">` +
-        `<div class="main-speech-box">` +
+        `<div class="main-speech-box" id="speechbox">` +
         `<div class="main-speech-people">` +
         `<div class="main-speech-img"><img src="${information[i].img}" alt="face"></div>` +
         `<p class="main-speech-name">${information[i].name}</p>` +
@@ -203,19 +209,71 @@ for (let i = 0; i < information.length; i++) {
 }
 
 
+// const main = document.querySelectorAll('.main-theme');
+
+// main.forEach(mainitem => {
+
+//     mainitem.addEventListener('click', () => {
+//         let selectedTheme = mainitem.getAttribute('data-theme');
+//         // console.log(selectedTheme)
+//         let speechbox = document.getElementById(`mainSpeech${selectedTheme}`);
+//         speechbox.style.display = 'block';
+
+//     });
+
+// });
+
+
+
+
+// 206から２１８まで使う
+
 const main = document.querySelectorAll('.main-theme');
 
 main.forEach(mainitem => {
 
     mainitem.addEventListener('click', () => {
-        let selectedTheme = mainitem.getAttribute('data-theme');
+        let selectedTheme = mainitem.getAttribute('data-theme')
+            // $(".main-speech-box").css("display", "none");
+
+
         console.log(selectedTheme)
+        $(this).next('.main-speech-wrapper').slideToggle();
+        $(this).toggleClass("open");
+
+
+
+        $(function() {
+            $(".main-speech-box").toggle(
+                function() {
+                    $(".main-speech-box").css("background-color", "#99CCFF");
+                },
+                function() {
+                    $(".main-speech-box").css("background-color", "#FFFFFF");
+                }
+            );
+        });
+
+        // 243から252出方きもいやつ
+
+
+
+
+
+
+
+
+
         let speechbox = document.getElementById(`mainSpeech${selectedTheme}`);
         speechbox.style.display = 'block';
 
     });
 
 });
+
+
+
+
 
 // const button = document.querySelector('button');
 
@@ -232,6 +290,17 @@ $(".hamburger-content a").click(function() { //ナビゲーションのリンク
     $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
     $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
 });
+
+$(".hamburger2").click(function() { //ボタンがクリックされたら
+    $(this).toggleClass('active2'); //ボタン自身に activeクラスを付与し
+    $(".hamburger-content2").toggleClass('panelactive2'); //ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hamburger-content2 a").click(function() { //ナビゲーションのリンクがクリックされたら
+    $(".hamburge2r").removeClass('active2'); //ボタンの activeクラスを除去し
+    $(".hamburger-content2").removeClass('panelactive2'); //ナビゲーションのpanelactiveクラスも除去
+});
+
 
 
 
