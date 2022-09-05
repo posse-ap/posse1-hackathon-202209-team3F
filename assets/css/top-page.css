@@ -2,6 +2,12 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+li>a {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #344449;
+}
+
 .main-top {
     width: 70%;
     height: 700px;
@@ -375,6 +381,13 @@ html {
     color: black;
 }
 
+.header-title {
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
 @media(max-width: 720px) {
     .header-title {
         display: none;
@@ -417,13 +430,6 @@ li {
     margin-left: auto;
     align-items: center;
     display: flex;
-}
-
-.header-title {
-    font-weight: bold;
-    display: flex;
-    list-style: none;
-    gap: 32px;
 }
 
 .header-icon {
