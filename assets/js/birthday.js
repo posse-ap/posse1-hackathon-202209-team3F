@@ -2,11 +2,11 @@
 
 
 
-const picture1Array = ["assets/img/birthday-itsuki.png", 'assets/img/posseロゴ-removebg-preview.png'];
+const picture1Array = ["assets/img/birthday-kazuki.jpg", 'assets/img/birthday-mkp.png', "assets/img/image.png", 'assets/img/posselogo-removebg-preview.png'];
 let num = -1;
 
 function slideShow1() {
-    if (num === 1) {
+    if (num === 3) {
         num = 0;
     } else {
         num++;
@@ -15,7 +15,7 @@ function slideShow1() {
 }
 setInterval(slideShow1, 500);
 
-const picture2Array = ["assets/img/birthday-itsuki.jpeg", 'assets/img/posseロゴ-removebg-preview.png'];
+const picture2Array = ["assets/img/birthday-mrp.png", 'assets/img/posselogo-removebg-preview.png', "assets/img/kamokamo.png", "assets/img/birthday-yoshitaka.png"];
 
 
 let num2 = -1;
@@ -23,7 +23,7 @@ let num2 = -1;
 
 
 function slideShow2() {
-    if (num === 1) {
+    if (num2 === 3) {
         num2 = 0;
     } else {
         num2++;
@@ -34,13 +34,13 @@ function slideShow2() {
 
 setInterval(slideShow2, 500);
 
-const picture3Array = ["assets/img/birthday-itsuki.jpeg", 'assets/img/posseロゴ-removebg-preview.png'];
+const picture3Array = ["assets/img/birthday-yukiho.png", 'assets/img/posselogo-removebg-preview.png', "assets/img/birthday-daiki.jpg", "assets/img/birthday-itsuki.png", "assets/img/birthday-iroha.png", "assets/img/birthday-narumiu.png"];
 
 
 let num3 = -1;
 
 function slideShow3() {
-    if (num3 === 1) {
+    if (num3 === 4) {
         num3 = 0;
     } else {
         num3++;
@@ -51,13 +51,13 @@ function slideShow3() {
 
 setInterval(slideShow3, 300);
 
-const picture4Array = ["assets/img/birthday-itsuki.jpeg", 'assets/img/posseロゴ-removebg-preview.png'];
+const picture4Array = ['assets/img/posselogo-removebg-preview.png', "assets/img/birthday-narumiu.png", "assets/img/birthday-yohei.jpg"];
 
 
 let num4 = -1;
 
 function slideShow4() {
-    if (num === 1) {
+    if (num4 === 2) {
         num4 = 0;
     } else {
         num4++;
@@ -65,7 +65,11 @@ function slideShow4() {
     document.getElementById("slideImg4").src = picture4Array[num4];
 }
 
-setInterval(slideShow3, 500);
+
+setInterval(slideShow4, 300);
+
+
+
 
 
 
@@ -269,22 +273,35 @@ function createProcess(year, month) {
 
 
 const buttonOpen = document.getElementById('modalOpen');
+// const buttonOpen2 = document.getElementById('modalOpen2');
 const modal = document.getElementById('easyModal');
+// const modal2 = document.getElementById('easyModal2');
 const buttonClose = document.getElementsByClassName('modalClose')[0];
+// const buttonClose2 = document.getElementsByClassName('modalClose2')[0];
 
 // ボタンがクリックされた時
 buttonOpen.addEventListener('click', modalOpen);
+// buttonOpen2.addEventListener('click', modalOpen);
 
 function modalOpen() {
     modal.style.display = 'block';
 }
 
+// function modalOpen() {
+//     modal2.style.display = 'block';
+// }
+
 // バツ印がクリックされた時
 buttonClose.addEventListener('click', modalClose);
+// buttonClose2.addEventListener('click', modalClose);
 
 function modalClose() {
     modal.style.display = 'none';
 }
+
+// function modalClose() {
+//     modal2.style.display = 'none';
+// }
 
 // モーダルコンテンツ以外がクリックされた時
 addEventListener('click', outsideClose);
@@ -295,6 +312,11 @@ function outsideClose(e) {
     }
 }
 
+// function outsideClose(e) {
+//     if (e.target == modal2) {
+//         modal2.style.display = 'none';
+//     }
+// }
 
 $(".hamburger").click(function() { //ボタンがクリックされたら
     $(this).toggleClass('active'); //ボタン自身に activeクラスを付与し
@@ -305,3 +327,38 @@ $(".hamburger-content a").click(function() { //ナビゲーションのリンク
     $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
     $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
 });
+
+
+
+
+
+
+
+
+
+
+
+// <
+// li >
+//     <
+//     button id = "modalOpen2"
+// class = "button information2" > イベント登録はこちら！ < /button> <
+// div id = "easyModal2"
+// class = "modal" >
+//     <
+//     div class = "modal-content" >
+//     <
+//     div class = "modal-header" >
+//     <
+//     h1 > posseイベントお知らせ🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 < /h1> <
+// span class = "modalClose2" > × < /span> < /
+//     div > <
+//     div class = "modal-body" >
+//     <
+//     p > 現在ハッカソン開催中！ < /p> <
+// p > 9 月15日より 巻き返し合宿スタート！! < /p> <
+// a href = "https://event.posse-ap.com/" > スケジュール登録はこちら！ < /a> < /
+//     div > <
+//     /div> < /
+//     div > <
+//     /li>
