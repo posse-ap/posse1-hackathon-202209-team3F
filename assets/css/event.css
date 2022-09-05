@@ -228,20 +228,42 @@ ul{
     animation-fill-mode: forwards;
 }
 
+.main-outer{
+    display: flex;
+}
+
+.main-comment{
+    width: 25%;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-top: 10%;
+}
+.main-comment span{
+    color: rgb(224, 155, 53);
+}
+
+.main-comment p{
+    line-height: 1.5em;
+    border: 1px solid rgb(246, 214, 156);
+    padding: 20px;
+    background-color: rgb(246, 214, 156);
+    border-radius: 3px;
+}
+
+
 .slider{
-    margin: 50px auto;
+    margin: 5% auto 0px 10%;
     width: 50%;
 }
 .slider img{
     height: auto;
     width: 100%;
 }
-/*slick setting*/
+
 .slick-prev:before,
 .slick-next:before {
     color: #000;
 }
-
 
 
 @media (min-width: 720px)
