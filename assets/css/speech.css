@@ -41,49 +41,54 @@ body{
   color: #666;
 }
 
-/* .main-speech {
-} */
+ 
+.main-speech {
+  margin-top: 70px;
+  background-image: url(../img/summer-dx.jpg);
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
 
-.main-speech-heading-img {
+.background-img {
+  margin-top: 70px;
+  width: 900px;
+  height: 500px;
+  background-color: #dce1e7;
+  opacity: 0.4;
+}
+
+/* .main-speech-heading-img {
   margin-top: 10%;
   width: 100%;
   position: relative;
+  height: 100px;
+} */
 
-}
+
+
 .main-speech-heading{
   /* margin-top: 15%;
   margin-left: 37%;
   padding-left: 10%; */
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 4%;
-  position: absolute;
-  top: %;
-  left: 50%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
   display: inline-block;
   padding: 0 55px;
-  color: rgb(37, 62, 82);
-}
+  color: rgb(0, 0, 0);
+  margin-left: 37%;
+  margin-top: 35%;
+
+  }
 
 
-.main-speech-heading:before, .main-speech-heading:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 45px;
-  height: 2px;
-  background-color: rgb(37, 62, 82);
-}
-.main-speech-heading:before {
-  left: 0;
-}
-.main-speech-heading:after {
-  right: 0;
-}
+ 
 
-.main-content{
-  
-}
 
 .main-theme{
   text-align: center;
