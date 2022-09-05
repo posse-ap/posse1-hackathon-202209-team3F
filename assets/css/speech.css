@@ -353,8 +353,10 @@
             .header-text-inline {
                 display: block;
                 font-size: 60px;
-                line-height: 3.5;
+                line-height: 1.5;
                 margin-top: 12px;
+                margin-bottom: 20px;
+                color: #FFFFFF;
             }
             /* .main-speech-people {
                 margin-left: 20%;
