@@ -205,7 +205,7 @@ for (let i = 0; i < information.length; i++) {
 +        `<div class="main-speech-comment">`
 +                `<p>${information[i].message}</p>`
 +        `</div>`
-+        `<button class="main-good-btn">いいね</button>`
++        `<button class="main-good-btn">like</button>`
 +      `</div>`
 +    `</div>`    
 +  `</div>`;
@@ -228,3 +228,8 @@ main.forEach(mainitem =>{
 
 }
 );
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', event => {
+//   button.textContent = `like ${event.detail}`;
