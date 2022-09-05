@@ -1,4 +1,9 @@
 /* いつきのヘッダー */
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
 .header-inner{
   align-items: center;
   background-color: #fff;
@@ -37,124 +42,77 @@
 }
 
 
-
-/* いつきのテーマ作るとこ*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-speech-heading{
-  margin-top: 10%;
-  padding-left: 5%;
-  font-size: 50px;
+  margin-top: 15%;
+  padding-left: 10%;
+  font-size: 40px;
   margin-bottom: 4%;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.main-speech-heading:before, .main-speech-heading:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+.main-speech-heading:before {
+  left: 0;
+}
+.main-speech-heading:after {
+  right: 0;
+}
+
+.main-content{
+  
 }
 
 .main-theme{
   text-align: center;
-  border: solid;
-  border-color:black;
   cursor: pointer;
-  margin-left: 15%;
+  /* margin-left: 15%;
   margin-right: 15%;
-  margin-top: 8%;
-  /* height: 30px; */
+  margin-top: 20%; */
+  margin: 20%;
+  position: relative;
+}
+
+.main-theme::before, .main-theme::after{
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.main-theme::before {
+	border-left: solid 4px #55abe9;
+	border-top: solid 4px #00316d;
+	top: -100%;
+	left: 10%;
+}
+
+.main-theme::after {
+	border-right: solid 4px #000000;
+	border-bottom: solid 4px #000000;
+	bottom: -100%;
+	right: 10%;
 }
 
 .main-theme>p{
   font-size: 25px;
   height: 4%;
   font-weight: bolder;
+  /* background: linear-gradient(transparent 70%, #a7d6ff 80%); */
+  width: 50%;
+  margin: auto;
+  /* border-bottom: solid 6px rgba(54, 158, 243, 0.508); */
+
 }
-
-/* ゆうやの押した後のコメント欄づくり */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .main-speech-inner{
@@ -162,12 +120,12 @@
 }
 
 .main-speech-box{
-  margin-top: 100px;
+  margin-top: 8%;
   display: flex;
 }
 
 .main-speech-people{
-  margin-left: 300px;
+  margin-left: 20%;
 }
 
 .main-speech-img{
@@ -195,7 +153,7 @@
 .main-speech-name{
   font-size: 30px;
   font-weight: 600;
-  margin-left: 10px
+  margin-left: 10%;
 }
 
 
@@ -209,7 +167,7 @@
   background: skyblue;
   border: solid 3px skyblue;
   box-sizing: border-box;
-  width: 600px;
+  width: 65%;
   padding: 10px 30px;
   border-radius: 30px;
 }
@@ -228,8 +186,8 @@
 
 .main-speech-wrapper button{
   padding: 7px;
-  margin-left: 500px;
-  margin-top: 3px;
+  margin-left: 60%;
+  margin-top: 5%;
 }
 
 #mainSpeech9{
