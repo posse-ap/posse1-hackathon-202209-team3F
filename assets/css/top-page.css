@@ -1,0 +1,18 @@
+.main-top {
+    width: 70%;
+height: 70%;
+background-image: url(../img/summer-dx2.JPG);
+background-size: cover;
+clip-path: polygon(0 10%, 100% 10%, 100% 80%, 50% 93%, 0 80%);
+margin: auto;
+margin-left: 14%;
+position: relative;
+
+}
+
+.main-top-img {
+    background-color: black;
+    opacity: 0.4;
+    width: 1000px;
+    height: 700px;
+}
