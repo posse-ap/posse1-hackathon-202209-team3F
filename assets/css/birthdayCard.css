@@ -90,10 +90,27 @@
 }
 .main-month-heading-txt {
 color: rgb(28, 17, 139);
-display: inline-block;
+/* display: inline-block; */
 font-family: 'Lato', sans-serif;
 font-family: 'Noto Sans JP', sans-serif;
 font-size: 70px;
+position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.main-month-heading-txt:before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(61, 59, 103, 0.523);
+  border-radius: 1px;
 }
 
 .main-birthday-card-img {
@@ -102,14 +119,18 @@ width: 70px;
 }
 
 .main-year-heading {
-    color: rgb(199, 196, 0);
+    /* color: rgb(199, 196, 0); */
     margin-left: 17%;
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     border-radius: 4px;
-    width: 5%;
-    text-align: center;
-    border-style: solid;
+    width: 5%; */
+    /* text-align: center; */
+    /* border-style: solid; */
+    padding: 0.4em;/*文字周りの余白*/
+  color: #3c3402;/*文字色*/
+  background: #fcffea;/*背景色*/
+  border-bottom: solid 3px #c7d436;/*下線*/
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
