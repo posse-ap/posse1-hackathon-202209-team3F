@@ -46,7 +46,7 @@
         <div class="main-next-event">
         <img src="./assets/img/posse-photo3.jpg" alt="" class="main-event-subheading-img">
             <div class="main-event-contents">
-        <h2 class="main-event-title">聖地巡礼　君の名は</h2>
+        <h2 class="main-event-title">4日  聖地巡礼　君の名は</h2>
         <h3 class="main-event-date">9/4　日曜日 in 四ツ谷　<br>「言の葉の庭」の新海誠監督が、夢の中で入れ替わる少年と少女を主人公に贈る青春SFファンタジー・アニメーション。
             入れ替わりが巻き起こす思春期ならではのコミカルで甘酸っぱい青春模様と、2人を待ち受ける思いも寄らぬ運命の顛末を美しい映像とともに綴る。
             声の出演は神木隆之介、上白石萌音。千年ぶりとなる彗星の接近を1ヵ月後に控えた日本。山深い田舎町で鬱屈した毎日を過ごし、都会の生活に憧れを抱く女子高生の三葉。
@@ -62,5 +62,30 @@
         <script src="./assets/js/jquery-3.6.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="./assets/js/event.js"></script>
       </div>
+
+
+
+
+      <div class="main-containor">
+        <section class="main-content">
+            
+            
+            <!-- カレンダー -->
+            <!-- xxxx年xx月を表示 -->
+            <h1 class="calendar-header" id="header"></h1>
+            <div id="calendar"></div>
+            <div class="wrapper1">
+              
+              <!-- ボタンクリックで月移動 -->
+              <div id="next-prev-button">
+                  <button id="prev" onclick="prev()">‹</button>
+                  <button id="next" onclick="next()">›</button>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <iframe class="event-barner" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E3%83%AA%E3%82%A2%E3%82%A4%E3%83%99%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&showTabs=0&showPrint=0&src=dHN1Y2hpeWEuaXRzdWtpMDcyNEBnbWFpbC5jb20&src=aTQ5dDBrN2U3dHZrYTlhNXNtNXJsNG1nbDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23F09300&color=%2333B679&color=%230B8043" ></iframe>
+</main>
 </body>
 </html>
