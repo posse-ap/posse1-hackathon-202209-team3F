@@ -13,7 +13,7 @@ function slideShow1() {
     }
     document.getElementById("slideImg1").src = picture1Array[num];
 }
-setInterval(slideShow1, 500);
+setInterval(slideShow1, 1500);
 
 const picture2Array = ["assets/img/birthday-mrp.png", 'assets/img/posselogo-removebg-preview.png', "assets/img/kamokamo.png", "assets/img/birthday-yoshitaka.png"];
 
@@ -32,7 +32,7 @@ function slideShow2() {
 }
 
 
-setInterval(slideShow2, 500);
+setInterval(slideShow2, 1500);
 
 const picture3Array = ["assets/img/birthday-yukiho.png", 'assets/img/posselogo-removebg-preview.png', "assets/img/birthday-daiki.jpg", "assets/img/birthday-itsuki.png", "assets/img/birthday-iroha.png", "assets/img/birthday-narumiu.png"];
 
@@ -49,7 +49,7 @@ function slideShow3() {
 }
 
 
-setInterval(slideShow3, 300);
+setInterval(slideShow3, 1500);
 
 const picture4Array = ['assets/img/posselogo-removebg-preview.png', "assets/img/birthday-narumiu.png", "assets/img/birthday-yohei.jpg"];
 
@@ -66,7 +66,24 @@ function slideShow4() {
 }
 
 
-setInterval(slideShow4, 300);
+setInterval(slideShow4, 1500);
+
+// const picture5Array = ['assets/img/posselogo-removebg-preview.png', "assets/img/birthday-narumiu.png", "assets/img/birthday-yohei.jpg"];
+
+
+// let num5 = -1;
+
+// function slideShow5() {
+//     if (num5 === 2) {
+//         num5 = 0;
+//     } else {
+//         num5++;
+//     }
+//     document.getElementById("body").src = picture5Array[num5];
+// }
+
+
+// setInterval(slideShow5, 1500);
 
 
 
@@ -362,3 +379,52 @@ $(".hamburger-content a").click(function() { //ナビゲーションのリンク
 //     /div> < /
 //     div > <
 //     /li>
+
+
+
+
+jQuery(function($) {
+    $('.conA').bgSwitcher({
+        images: ["assets/img/posselogo-removebg-preview.png", '入れたい写真のリンク', '入れたい写真のリンク'], // 切り替える背景画像を指定
+        interval: 6000, // 背景画像を切り替える間隔を指定 3000=3秒
+        loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+        effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+        duration: 600, // エフェクトの時間を指定します。
+        easing: "swing" // エフェクトのイージングをlinear,swingから指定
+    });
+});
+
+// jQuery(function($) {
+//     $('.box').bgSwitcher({
+//         images: ["assets/img/posselogo-removebg-preview.png", 'img/bg2.jpg', 'img/bg3.jpg'],
+//         interval: 5000,
+//         loop: true,
+//         shuffle: true,
+//         effect: "drop",
+//         duration: 2000,
+//         easing: "swing"
+//     });
+// });
+
+// $('body').vegas({
+//     slides: [
+//         { src: "assets/img/posselogo-removebg-preview.png" },
+//         { src: "assets/img/birthday-narumiu.png" },
+//         {
+//             src: "assets/img/posselogo-removebg-preview.png"
+//         },
+//     ],
+//     transition: 'fade'
+// });
+
+
+// $(function() {
+//     $('#example, body').vegas({
+//         slides: [
+//             { src: "assets/img/posselogo-removebg-preview.png" },
+//             { src: "assets/img/birthday-narumiu.png" },
+//             { src: "assets/img/posselogo-removebg-preview.png" },
+//             { src: "assets/img/birthday-narumiu.png" }
+//         ]
+//     });
+// });
