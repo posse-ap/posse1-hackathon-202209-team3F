@@ -599,3 +599,12 @@
                 transform: scale(1.0);
             }
         }
+
+        .birthday-calendar{
+            border: solid 1px #777;
+            width: 60%;
+            height: 500px;
+            margin: auto;
+            justify-content: center;
+            margin-left: 20%;
+        }
