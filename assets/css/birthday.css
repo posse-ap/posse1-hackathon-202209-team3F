@@ -1,8 +1,9 @@
         /* いつきのヘッダー */
         
-        /* main{
+        body {
             font-family: 'Noto Sans JP', sans-serif;
-        } */
+        }
+
         .header-inner {
             align-items: center;
             background-color: #fff;
@@ -49,19 +50,31 @@
         }
         
         .title {
-            font-family: 'Corben', cursive;
             display: block;
-            font-size: 80px;
-            font-weight: bold;
+            font-size: 60px;
+            font-weight: 700px;
             line-height: 1.5;
-            text-shadow: 1px 2px 3px;
+            /* text-shadow: 1px 2px 3px; */
             padding: 0 20px;
             text-align: center;
             color: #3A3A3A;
+            font-family: 'Noto Sans JP', sans-serif;
+            border-bottom: solid 3px #cce4ff;
+            position: relative;
+            width: 35%;
+        }
+
+            .title:after {
+                position: absolute;
+                content: " ";
+                display: block;
+                border-bottom: solid 3px #5472cd;
+                bottom: -3px;
+                width: 20%;
 
         }
         .wrapper{
-            background-color: lightblue;
+            background-color: rgb(207, 225, 231);
         }
 
         main {
@@ -74,7 +87,7 @@
             padding-top: 120px;
             width: 100%;
             background-size: 100px;
-            background-color: lightblue;
+            background-color: rgb(207, 225, 231);
         }
         
         .main-content {
@@ -96,6 +109,8 @@
         
         .main-year{
             text-decoration: none;
+            font-family: 'Noto Sans JP', sans-serif;
+            height: 20%;
             
         }
         
@@ -112,10 +127,11 @@
         .area>ul>li>a {
             font-size: 30px;
             font-weight: 800;
-            color: coral;
-            border-bottom: dotted 4px black;
+            color: rgb(1, 1, 1);
+            /* border-bottom: dotted 4px black; */
             font-weight: 900;
             text-decoration: none;
+            font-family: 'Noto Sans JP', sans-serif;
         }
         /* .area>ul>li>a{
             margin: 5em 5;
@@ -236,7 +252,7 @@
             display: block;
             background: #f4f4f4;
             margin: 0 2px;
-            padding: 10px 20px;
+            padding: 2px 20px;
         }
         /*liにactiveクラスがついた時の形状*/
         
@@ -260,7 +276,7 @@
             animation-name: displayAnime;
             animation-duration: 2s;
             animation-fill-mode: forwards;
-            background-color: lightblue;
+            background-color: rgb(207, 225, 231);
         }
         
         @keyframes displayAnime {
