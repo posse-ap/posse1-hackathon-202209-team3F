@@ -212,7 +212,7 @@ ul {
     opacity: 0;
     /*透過0*/
     background: #fff;
-    padding: 50px 20px;
+    padding: 0px 20px;
 }
 
 
@@ -232,11 +232,18 @@ ul {
     /* display: grid; */
 }
 
+
+/* @media (max-width:720px) {
+    .hamburger {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
 .main-comment {
-    width: 25%;
-    margin-right: 10%;
+    width: 35%;
+    /* margin-right: 10%; */
     margin-left: auto;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .main-comment span {
