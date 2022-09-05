@@ -226,7 +226,6 @@
             width: 100%;
         }
         
-        
         table {
             outline: 2px solid #ddd;
             border-collapse: collapse;
@@ -599,8 +598,8 @@
                 transform: scale(1.0);
             }
         }
-
-        .birthday-calendar{
+        
+        .birthday-calendar {
             border: solid 1px #777;
             width: 60%;
             height: 500px;
