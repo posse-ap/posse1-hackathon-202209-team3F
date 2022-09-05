@@ -27,7 +27,7 @@ let FebNameTo = ['']
 let MarNameTo = ['']
 let AprNameTo = ['']
 let MayNameTo = ['']
-let JunNameTo = ['石井潤','みきはる','森遥','五十嵐夏佳貴','加茂竜之介']
+let JunNameTo = ['石井潤','みきはる','森遥','五十嵐佳貴','加茂竜之介']
 let JlyNameTo = ['松本透歩','佐藤大暉','繁田いろは','土屋一貴']
 let AugNameTo = ['生川美月','田中陽平']
 let SepNameTo = ['']
@@ -84,7 +84,7 @@ birthdaycardjan.innerHTML +=
     '<div class="main-birthday-card">'
 +      '<div class="main-sub-heading">'
 +         '<h1 class="main-year-heading">'+Jan[i]+'日</h1>'
-+          '<h2 class="main-birthday-name">to '+JanNameTo[i]+ 'from '+JanNameFrom[i]+'</h2>'
++          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'　from '+JanNameFrom[i]+'</h2>'
 +      '</div>'
 +      '<div class="main-birthday-slide"><img src="./assets/img/'+JanImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
 +        '<button class="main-good-btn">いいね</button>'
