@@ -1,3 +1,26 @@
+$(".hamburger").click(function() { //ボタンがクリックされたら
+    $(this).toggleClass('active'); //ボタン自身に activeクラスを付与し
+    $(".hamburger-content").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hamburger-content a").click(function() { //ナビゲーションのリンクがクリックされたら
+    $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
+    $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
+});
+
+$(".hamburger2").click(function() { //ボタンがクリックされたら
+    $(this).toggleClass('active2'); //ボタン自身に activeクラスを付与し
+    $(".hamburger-content2").toggleClass('panelactive2'); //ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".hamburger-content2 a").click(function() { //ナビゲーションのリンクがクリックされたら
+    $(".hamburge2r").removeClass('active2'); //ボタンの activeクラスを除去し
+    $(".hamburger-content2").removeClass('panelactive2'); //ナビゲーションのpanelactiveクラスも除去
+});
+
+
+
+
 const buttonOpen = document.getElementById('modalOpen');
 // const buttonOpen2 = document.getElementById('modalOpen2');
 const modal = document.getElementById('easyModal');
@@ -37,19 +60,3 @@ function outsideClose(e) {
         modal.style.display = 'none';
     }
 }
-
-// function outsideClose(e) {
-//     if (e.target == modal2) {
-//         modal2.style.display = 'none';
-//     }
-// }
-
-$(".hamburger").click(function() { //ボタンがクリックされたら
-    $(this).toggleClass('active'); //ボタン自身に activeクラスを付与し
-    $(".hamburger-content").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
-});
-
-$(".hamburger-content a").click(function() { //ナビゲーションのリンクがクリックされたら
-    $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
-    $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
-});

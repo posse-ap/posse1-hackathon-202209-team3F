@@ -30,7 +30,6 @@ body {
     margin-right: 38%;
 }
 
-
 .main-list ul {
     /* position: absolute;
     left:10%; */
@@ -422,7 +421,7 @@ li {
 
 .header-title {
     font-weight: bold;
-    /* display: flex; */
+    display: flex;
     list-style: none;
     gap: 32px;
 }
