@@ -33,7 +33,7 @@ body {
 nav {
     /* border-bottom: 0px solid rgba(86, 63, 63, 0.476); */
     /* position: relative; */
-    margin-top: 3%;
+    /* margin-top: 3%; */
 }
 
 nav ul {
@@ -310,10 +310,10 @@ html {
 
 .button {
     background: rgba(93, 87, 87, 0.2);
-    color: #fff;
+    color: #344449;
     border: 0;
     font-size: 13px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 900;
     position: relative;
     margin: 0 auto;
@@ -368,7 +368,7 @@ html {
 }
 
 .modalClose {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .modalClose:hover {
