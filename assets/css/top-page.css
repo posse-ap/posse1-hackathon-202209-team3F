@@ -362,9 +362,10 @@ html {
 
 .modal-header {
     background: lightblue;
-    padding: 3px 15px;
+    padding: 3px 45px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .modalClose {
