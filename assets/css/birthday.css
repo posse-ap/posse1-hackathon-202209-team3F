@@ -3,7 +3,7 @@
         body {
             font-family: 'Noto Sans JP', sans-serif;
         }
-
+        
         .header-inner {
             align-items: center;
             background-color: #fff;
@@ -63,20 +63,20 @@
             position: relative;
             width: 35%;
         }
-
-            .title:after {
-                position: absolute;
-                content: " ";
-                display: block;
-                border-bottom: solid 3px #5472cd;
-                bottom: -3px;
-                width: 20%;
-
+        
+        .title:after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #5472cd;
+            bottom: -3px;
+            width: 20%;
         }
-        .wrapper{
+        
+        .wrapper {
             background-color: rgb(207, 225, 231);
         }
-
+        
         main {
             width: 100%;
             display: block;
@@ -100,28 +100,25 @@
             width: 100%;
         }
         
-
-        
-        .tab{
+        .tab {
             margin-left: 15%;
             margin-top: 5%;
         }
         
-        .main-year{
+        .main-year {
             text-decoration: none;
             font-family: 'Noto Sans JP', sans-serif;
             height: 20%;
-            
         }
         
-        .main-year>p{
+        .main-year>p {
             font-size: 30px;
             padding: 0;
             color: #000;
         }
-        .area>ul>li{
+        
+        .area>ul>li {
             padding-top: 1%;
-
         }
         
         .area>ul>li>a {
@@ -178,7 +175,7 @@
         
         .month-changeーbefore:before {
             content: "\03c";
-            color:black;
+            color: black;
             /* font-size: 2px; */
         }
         
@@ -383,20 +380,25 @@
         }
         
         .button {
-            background: lightblue;
-            color: #fff;
+            background: rgba(93, 87, 87, 0.2);
+            color: #344449;
             border: 0;
             font-size: 13px;
-            border-radius: 5px;
+            border-radius: 3px;
             font-weight: 900;
             position: relative;
             margin: 0 auto;
-            font-family: serif;
+            font-family: 'Noto Sans JP', sans-serif;
         }
         
         .button:hover {
-            background: lightcoral;
+            background: lightblue;
             cursor: pointer;
+        }
+        
+        li>a {
+            font-family: 'Noto Sans JP', sans-serif;
+            ;
         }
         
         .modal {
@@ -650,7 +652,6 @@
         }
         
         .information {
-            font-size: larger;
             animation: boyoboyo 2s ease-out infinite;
             opacity: 1;
         }
@@ -798,4 +799,3 @@
         footer {
             height: 20%;
         }
-

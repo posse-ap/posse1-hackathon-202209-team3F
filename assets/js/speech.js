@@ -237,22 +237,22 @@ main.forEach(mainitem => {
             // $(".main-speech-box").css("display", "none");
 
 
-        console.log(selectedTheme)
-        $(this).next('.main-speech-wrapper').slideToggle();
-        $(this).toggleClass("open");
+        // console.log(selectedTheme)
+        // $(this).next('.main-speech-wrapper').slideToggle();
+        // $(this).toggleClass("open");
 
 
 
-        $(function() {
-            $(".main-speech-box").toggle(
-                function() {
-                    $(".main-speech-box").css("background-color", "#99CCFF");
-                },
-                function() {
-                    $(".main-speech-box").css("background-color", "#FFFFFF");
-                }
-            );
-        });
+        // $(function() {
+        //     $(".main-speech-box").toggle(
+        //         function() {
+        //             $(".main-speech-box").css("background-color", "#99CCFF");
+        //         },
+        //         function() {
+        //             $(".main-speech-box").css("background-color", "#FFFFFF");
+        //         }
+        //     );
+        // });
 
         // 243から252出方きもいやつ
 
