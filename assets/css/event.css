@@ -9,14 +9,17 @@
     left: 0;
     right: 0;
     z-index: 10;
-}
+
+
 
 
 .header-nav{
+
     margin-left: auto;
     align-items: center;
     display: flex;
 }
+
 
 .header-title{
     font-weight: bold;
@@ -26,12 +29,15 @@
 }
 
 .header-icon{
+
     display: flex;
     list-style: none;
     gap: 16px;
 }
 
+
 .header-nav li a{
+
     text-decoration: none;
     color: #666;
 }
@@ -48,7 +54,7 @@
     color: darkgreen;
     font-family: sans-serif;
     font-weight: lighter;
-    background-image: linear-gradient(rgba(0,0,0,0) 95%, rgb(148, 211, 155) 95%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 95%, rgb(148, 211, 155) 95%);
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 20px;
@@ -60,8 +66,9 @@
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
     width: 90%;
-    max-height:  700px;;
-} 
+    max-height: 700px;
+    ;
+}
 
 .main-event-subheading  {
 	display: flex;
@@ -131,6 +138,7 @@
     padding: 0 16px 0 0;
 }
 
+
 .main-event-comment:before {
     content: "";
     position: absolute;
@@ -140,6 +148,17 @@
     border: 15px solid transparent;
     border-right: 15px solid #ffcc75;
     z-index: 0;
+}
+
+
+
+
+@media (min-width: 720px)
+{
+
+    .main-next-event {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -155,6 +174,7 @@ ul{
     list-style: none;
     margin-top: 5%;
 }
+
 .tab li a{
     color: black;
 	display: block;
@@ -162,7 +182,9 @@ ul{
 	margin:0 2px;
 	padding:10px 20px;
     text-decoration: none;
-}
+
+
+
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
 	background:#fff;
@@ -219,6 +241,17 @@ ul{
 
 
 
+
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+
+    }
+}
 
 
 
