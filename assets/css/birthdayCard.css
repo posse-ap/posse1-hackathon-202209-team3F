@@ -1,111 +1,105 @@
 /* いつきのヘッダー */
-main{
-  /* font-family: 'Noto Sans JP', sans-serif; */
-  font-weight: 900;
-  color: black;
+
+main {
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-weight: 900;
+    color: black;
 }
 
-.header-inner{
-  align-items: center;
-  background-color: #fff;
-  display: flex;
-  padding: 15px 24px;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+.header-inner {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    padding: 15px 24px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
-.header-nav{
-  margin-left: auto;
-  align-items: center;
-  display: flex;
+.header-nav {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
 }
 
-.header-title{
-  font-weight: bold;
-  display: flex;
-  list-style: none;
-  gap: 32px;  
+.header-title {
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    gap: 32px;
 }
 
-.header-icon{
-  display: flex;
-  list-style: none;
-  gap: 16px;
+.header-icon {
+    display: flex;
+    list-style: none;
+    gap: 16px;
 }
 
-.header-nav li a{
-  text-decoration: none;
-  color: #666;
+.header-nav li a {
+    text-decoration: none;
+    color: #666;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* さら担当 */
 
-
 .main-sub-heading {
     margin: 50px;
 }
+
 .main-month-heading {
     text-align: center;
     padding-top: 90px;
     background-color: #bfeaf0;
 }
+
 .main-month-heading-txt {
-color: rgb(17, 80, 139);
-/* display: inline-block; */
-font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-size: 70px;
-position: relative;
-  display: inline-block;
-  margin-bottom: 1em;
+    color: rgb(17, 80, 139);
+    /* display: inline-block; */
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 70px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
 .main-month-heading-txt:before {
-  content: '';
-  position: absolute;
-  bottom: -25px;
-  display: inline-block;
-  width: 80px;
-  height: 3px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: rgba(61, 59, 103, 0.523);
-  border-radius: 1px;
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgba(61, 59, 103, 0.523);
+    border-radius: 1px;
 }
 
 .main-birthday-card-img {
-display: inline-block;
-width: 70px;
+    display: inline-block;
+    width: 70px;
 }
 
 .main-year-heading {
     margin-left: 17%;
     display: inline-block;
-    padding: 0.4em;/*文字周りの余白*/
-  color: #3c3402;/*文字色*/
-  background: #eafcff;/*背景色*/
-  border-bottom: solid 3px rgb(17, 80, 139);/*下線*/
+    padding: 0.4em;
+    /*文字周りの余白*/
+    color: #3c3402;
+    /*文字色*/
+    background: #eafcff;
+    /*背景色*/
+    border-bottom: solid 3px rgb(17, 80, 139);
+    /*下線*/
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
-
 
 .main-birthday-slide-img {
     width: 35%;
@@ -136,16 +130,15 @@ width: 70px;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 30px;
-
-
 }
 
 .main-birthday-heading-comment {
-  margin-left: 10%;
-  color: brown;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 10%;
+    color: brown;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
+
 .main-good-btn {
     margin-left: 60%;
     background-color: rgb(243, 94, 168);
@@ -157,49 +150,46 @@ width: 70px;
 }
 
 
-
-
-
-
-
 /* @charset "utf-8"; */
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
- 
-.good-counter{
-  font-size: 20px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  ;
 
+.good-counter {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    ;
 }
 
-.btn{
-  display: flex;
-  padding-left: 35%;
-  margin-top: 3%;
-  margin-bottom: 5%;
+.btn {
+    display: flex;
+    padding-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
-.good-number{
-  color: rgb(27, 102, 149);
+
+.good-number {
+    color: rgb(27, 102, 149);
 }
-#counter{
+
+#counter {
     font-size: 20pt;
 }
- 
-.good-btn{
-  margin-left: 10%;
-  
-}
-.button{
-  cursor: pointer;
+
+.good-btn {
+    margin-left: 10%;
 }
 
-#btnAdd{
+.button {
+    cursor: pointer;
+}
+
+#btnAdd {
     font-size: 15pt;
     padding: 5% 5% 5% 5%;
     background-color: #eee;
@@ -207,4 +197,395 @@ width: 70px;
     border-color: #eee;
 }
 
+@media (min-width:720px) {
+    .hamburger {
+        display: none;
+    }
+}
 
+
+/* #input:checked~.hamburger-content {
+  transform: translateX(0);
+  display: block;
+} */
+
+.hamburger-content {
+    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    /*はじめは透過0*/
+    /*ナビの位置と形状*/
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #ffffff;
+    /*動き*/
+    transition: all 0.3s;
+    position: fixed;
+}
+
+@media not all and (min-width: 720px) {
+    .hamburger-content {
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position: fixed;
+        z-index: -1;
+        opacity: 0;
+        /*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        /*ナビの高さ*/
+        background: #ffffff;
+        /*動き*/
+        transition: all 0.3s;
+    }
+}
+
+@media not all and (min-width: 720px) {
+    .hamburger-content.panelactive {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media not all and (max-width: 720px) {
+    .hamburger-content.panelactive {
+        display: none;
+    }
+}
+
+.hamburger-menu-quiz {
+    padding-top: 40px;
+}
+
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+
+.hamburger-content.panelactive {
+    opacity: 1;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*ナビゲーション*/
+
+.hamburger-content ul {
+    display: none;
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hamburger-content.panelactive ul {
+    display: block;
+    width: 100%;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+    width: 74px;
+    height: 50px;
+    align-items: center;
+}
+
+
+/*×に変化*/
+
+.hamburger span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #666;
+    width: 45%;
+}
+
+.hamburger span:nth-of-type(1) {
+    top: 20px;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 34px;
+}
+
+.hamburger.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+}
+
+.hamburger.active span:nth-of-type(3) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-of-type(2) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+}
+
+.hamburger-logo {
+    padding: 24px
+}
+
+.hamburger-line-fixed-link {
+    align-items: center;
+    background-color: #5FDF5B;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    width: 343px;
+    height: 60px;
+    left: calc(50% - 343px/2);
+    bottom: 159px;
+}
+
+.hamburger-sns {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 100px/2);
+    width: 150px;
+    bottom: 34px;
+    gap: 8px;
+}
+
+.hamburger-official-site {
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.8;
+    bottom: 104px;
+    position: absolute;
+    left: calc(50% - 112px/2);
+    width: 122px;
+}
+
+@media (min-width:720px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.wrapper {
+    overflow-x: hidden
+}
+
+.information {
+    font-size: larger;
+    animation: boyoboyo 2s ease-out infinite;
+    opacity: 1;
+}
+
+.information2 {
+    font-size: larger;
+    animation: boyoboyo 2s ease-out infinite;
+    opacity: 1;
+    margin-top: 50px;
+}
+
+@keyframes boyoboyo {
+    0%,
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.3);
+    }
+    30%,
+    90%,
+    50%,
+    70% {
+        transform: scale(0.95);
+    }
+    60% {
+        transform: scale(1.0);
+    }
+}
+
+.button {
+    background: rgba(93, 87, 87, 0.2);
+    color: #344449;
+    border: 0;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 900;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    ;
+}
+
+.button:hover {
+    background: lightblue;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.modal-header h1 {
+    margin: 1rem 0;
+}
+
+.modal-header {
+    background: lightblue;
+    padding: 3px 45px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.modalClose {
+    font-size: 3rem;
+}
+
+.modalClose:hover {
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    color: black;
+}
+
+.header-title {
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+@media(max-width: 720px) {
+    .header-title {
+        display: none;
+    }
+}
+
+.header-none {
+    display: flex;
+    gap: 30px;
+}
+
+@media (min-width:768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header-inner {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    padding: 15px 24px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-nav {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+}
+
+.header-icon {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.button {
+    background: rgba(93, 87, 87, 0.2);
+    color: #344449;
+    border: 0;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 900;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.button:hover {
+    background: lightblue;
+    cursor: pointer;
+}
+
+li>a {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #344449;
+}
