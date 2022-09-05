@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,24 +12,118 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header></header>
-    <main>
-        <div class="main-top">
-            <div class="main-top-img">
-                <p class="main-top-heading">POSSE</p>
-            </div>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="birthday.html">BIRTHDAY</a></li>
-                <li><a href="speech.html">100秒スピーチ</a></li>
-                <li><a href="event.html">リアイベ博物館</a></li>
+<body>
+    <header class="header-inner">
+        <div class="header-logo">
+            <img src="./assets/img/logo.svg" alt="POSSE">
+        </div>
+        <nav class="header-nav">
+            <ul class="header-title">
+                <li>
+                    <button id="modalOpen" class="button information">POSSE生へのお知らせ！</button>
+                    <div id="easyModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>posseイベントお知らせ 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉</h1>
+                                <span class="modalClose">×</span>
+                            </div>
+                            <div class="modal-body">
+                                <p>現在ハッカソン開催中！</p>
+                                <p>9月15日より 巻き返し合宿スタート！!</p>
+                                <a href="https://event.posse-ap.com/">スケジュール登録はこちら！</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="./birthday.html">誕生日お祝い</a>
+                </li>
+                <li>
+                    <a href="./speech.html">100秒スピーチ</a>
+                </li>
+                <li>
+                    <a href="./event.html">リアイベ博物館</a>
+                </li>
             </ul>
         </nav>
-            
-    </main>
-    <footer></footer>
+
+    </header>
+
+    <!-- ゆうだい担当 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+
+
+
+        <div class="hamburger"><span></span><span></span></div>
+
+        <nav class="hamburger-content">
+
+            <div class="hamburger-logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </div>
+
+            <ul class="back-menu">
+                <li>
+                    <a href="top-page.html" class="hamburger-menu-quiz">トップページ</a>
+                </li>
+                <li class="hamburger-menu-quiz">
+                    <a href="/speech.html" class="hamburger-menu-link">100秒スピーチ</a></li>
+                <li class="hamburger-menu-quiz">
+                    <a href="./birthday.html" class="hamburger-menu-link">バースデースライド</a>
+                </li>
+                <li class="hamburger-menu-quiz">
+                    <a href="./event.html" class="hamburger-menu-link">リアイベ博物館</a>
+                </li>
+                <li class="hamburger-menu-quiz">
+                    <a href="../quiz/index.html" class="hamburger-menu-link">イベント登録はこちら！</a>
+
+                </li>
+
+            </ul>
+
+
+
+            <br>
+
+        </nav>
+
+        <main>
+            <div class="main-top">
+                <div class="main-top-img">
+                    <p class="main-top-heading">POSSE</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="birthday.html">BIRTHDAY</a></li>
+                    <li><a href="speech.html">100秒スピーチ</a></li>
+                    <li><a href="event.html">リアイベ博物館</a></li>
+                </ul>
+            </nav>
+
+        </main>
+        <footer></footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/js/top.js"></script>
 </body>
+
 </html>
