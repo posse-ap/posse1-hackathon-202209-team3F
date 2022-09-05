@@ -84,7 +84,7 @@ birthdaycardjan.innerHTML +=
     '<div class="main-birthday-card">'
 +      '<div class="main-sub-heading">'
 +         '<h1 class="main-year-heading">'+Jan[i]+'日</h1>'
-+          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'　from '+JanNameFrom[i]+'</h2>'
++          '<h2 class="main-birthday-name">3.0期生　to '+JanNameTo[i]+'from '+JanNameFrom[i]+'</h2>'
 +      '</div>'
 +      '<div class="main-birthday-slide"><img src="./assets/img/'+JanImg[i]+'" alt="" class="main-birthday-slide-img"></div>'
 +        '<button class="main-good-btn">いいね</button>'
