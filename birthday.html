@@ -14,47 +14,45 @@
 </head>
 
 <body>
-    <!-- ゆうだいたんとう -->
-    <header class="header-inner">
-        <div class="header-logo">
-            <img src="./assets/img/logo.svg" alt="POSSE">
-        </div>
-        <nav class="header-nav">
-            <ul class="header-title">
-                <li>
-                    <a href="./birthday.html">誕生日お祝い</a>
-                </li>
-                <li>
-                    <a href="./speech.html">100秒スピーチ</a>
-                </li>
-                <li>
-                    <a href="#">リアイベ博物館</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="wrapper">
+        <!-- ゆうだいたんとう -->
+        <header class="header-inner">
+            <div class="header-logo">
+                <img src="./assets/img/logo.svg" alt="POSSE">
+            </div>
+            <nav class="header-nav">
+                <ul class="header-title">
+                    <li>
+                        <button id="modalOpen" class="button information">POSSE生へのお知らせ！</button>
+                        <div id="easyModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1>posseイベントお知らせ 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉</h1>
+                                    <span class="modalClose">×</span>
+                                </div>
+                                <div class="modal-body">
+                                    <p>現在ハッカソン開催中！</p>
+                                    <p>9月15日より 巻き返し合宿スタート！!</p>
+                                    <a href="https://event.posse-ap.com/">スケジュール登録はこちら！</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./birthday.html">誕生日お祝い</a>
+                    </li>
+                    <li>
+                        <a href="./speech.html">100秒スピーチ</a>
+                    </li>
+                    <li>
+                        <a href="#">リアイベ博物館</a>
+                    </li>
+                </ul>
+            </nav>
 
-    </header>
-    <main>
-        <!-- ゆうだい担当 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </header>
+        <main>
+            <!-- ゆうだい担当 -->
 
 
 
@@ -75,14 +73,63 @@
 
 
 
+            <div class="hamburger"><span></span><span></span></div>
+
+            <nav class="hamburger-content">
+
+                <div class="hamburger-logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </div>
+
+                <ul class="back-menu">
+                    <li class="hamburger-menu-toppage">
+                        <a href="../top/index.html" class="hamburger-menu-link">100秒スピーチ</a></li>
+                    <li class="hamburger-menu-quiz">
+                        <a href="../quiz/index.html" class="hamburger-menu-link">バースデースライド</a>
+                    </li>
+                    <li class="hamburger-menu-quiz">
+                        <a href="../quiz/index.html" class="hamburger-menu-link">リアイベ博物館</a>
+                    </li>
+                </ul>
+                <div class="hamburger-line-fixed">
+                    <div class="line-fixed-wrapper">
+                        <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i class="line-fixed-icon"><img src="imgs/icon-line.png" alt=" "></i><p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                        "><img src="imgs/icon-link-white.svg" alt=" "></i></a>
+                    </div>
+                </div>
+
+                <div class="hamburger-official-site">
+                    <a href="https://posse-ap.com/">POSSE公式サイト</a>
+                </div>
+
+                <br>
+
+            </nav>
 
 
 
-        <div class="main-containor">
-            <section class="main-content">
-                <div class="title">BirthDay&nbsp; slide</div>
-                <div>
-                    <ul class="tab">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="main-containor">
+                <section class="main-content">
+                    <article class="title">BirthDay slide</article>
+                    <ul class="tab" id="tab">
                         <li>
                             <a href="#2023" id="year2023" class="main-year"></a>
                         </li>
@@ -96,156 +143,118 @@
                             <a href="#2020" id="year2020" class="main-year"></a>
                         </li>
                     </ul>
-                    <div id="2023" class="area">
-                        <ul class="main-box-inner">
-                            <li class="main-month-box">
-                                <button id="" class="main-month">
+
+                    <div class="birthdaydate">
+                        <div id="2023" class="area">
+                            <ul class="main-box-inner">
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
                                 1月
                             </button>
-                                <figure class="main-month-img">
-                                    <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg7">
-                                </figure>
-                            </li>
-                            <li class="main-month-box">
-                                <button id="" class="main-month">
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
                                 2月
                             </button>
-                                <figure class="main-month-img">
-                                    <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg8">
-                                </figure>
-                            </li>
-                            <li class="main-month-box">
-                                <button id="" class="main-month">
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
                                 3月
                             </button>
-                                <figure class="main-month-img">
-                                    <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg9">
-                                </figure>
-                            </li>
-                        </ul>
-                        <div class="month-change">
-                            <div class="month-changeーbefore">
-                                前の月
-                            </div>
-                            <div class="month-changeーnext">
-                                次の月
-                            </div>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
+                                4月
+                            </button>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%">
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div id="2022" class="area">
+                            <ul class="main-box-inner">
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
+                                1月
+                            </button>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg1">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
+                                2月
+                            </button>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg2">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
+                                3月
+                            </button>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg3">
+                                    </div>
+                                </li>
+                                <li class="main-month-box">
+                                    <button id="" class="main-month">
+                                4月
+                            </button>
+                                    <div class="main-month-img">
+                                        <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg4">
+                                    </div>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
-                    <ul class="main-box-inner">
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            4月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg7">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            5月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg8">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            6月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg9">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul class="main-box-inner">
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            7月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg7">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            8月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg8">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            9月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg9">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul class="main-box-inner">
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            10月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg7">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            11月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg8">
-                            </figure>
-                        </li>
-                        <li class="main-month-box">
-                            <button id="" class="main-month">
-                            12月
-                        </button>
-                            <figure class="main-month-img">
-                                <img src="assets/img/posseロゴ-removebg-preview.png" width="100%" id="slideImg9">
-                            </figure>
-                        </li>
-                    </ul>
 
-                </div>
-                <div id="drink" class="area">
-                    <h2>ドリンク</h2>
-                    <ul>
-                        <li>ウーロン茶</li>
-                        <li>オレンジジュース</li>
-                        <li>ジンジャーエール</li>
-                    </ul>
 
-                </div>
-                <div id="dinner" class="area">
-                    <h2>ディナー</h2>
-                    <ul>
-                        <li>カレーライス</li>
-                        <li>ドリア</li>
-                        <li>グラタン</li>
-                    </ul>
 
+
+
+                </section>
+                <div class="wrapper1">
+                    <!-- xxxx年xx月を表示 -->
+                    <h1 id="header"></h1>
+
+                    <!-- ボタンクリックで月移動 -->
+                    <div id="next-prev-button">
+                        <button id="prev" onclick="prev()">‹</button>
+                        <button id="next" onclick="next()">›</button>
+                    </div>
+
+                    <!-- カレンダー -->
+                    <div>POSSE誕生日イベントカレンダー</div>
+                    <div id="calendar"></div>
                 </div>
 
-                <h1 id="year" class="main-year">
-                </h1>
 
-
-            </section>
-
-
-        </div>
-    </main>
+            </div>
 
 
 
-    <footer>
-        <!-- とりあえず保留 -->
-    </footer>
+        </main>
+
+
+
+        <footer>
+            <!-- とりあえず保留 -->
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(
