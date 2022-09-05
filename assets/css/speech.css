@@ -1,4 +1,9 @@
 /* いつきのヘッダー */
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
 .header-inner{
   align-items: center;
   background-color: #fff;
@@ -37,55 +42,6 @@
 }
 
 
-
-/* いつきのテーマ作るとこ*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-speech-heading{
   margin-top: 10%;
   padding-left: 5%;
@@ -93,15 +49,36 @@
   margin-bottom: 4%;
 }
 
+
+
 .main-theme{
   text-align: center;
-  border: solid;
-  border-color:black;
   cursor: pointer;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 8%;
-  /* height: 30px; */
+  position: relative;
+}
+
+.main-theme::before, .main-theme::after{
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.main-theme::before {
+	border-left: solid 2px #000000;
+	border-top: solid 2px #000000;
+	top: -100%;
+	left: 10%;
+}
+
+.main-theme::after {
+	border-right: solid 2px #000000;
+	border-bottom: solid 2px #000000;
+	bottom: -100%;
+	right: 10%;
 }
 
 .main-theme>p{
@@ -110,64 +87,18 @@
   font-weight: bolder;
 }
 
-/* ゆうやの押した後のコメント欄づくり */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main-speech-inner{
   display: none;
 }
 
 .main-speech-box{
-  margin-top: 100px;
+  margin-top: 8%;
   display: flex;
 }
 
 .main-speech-people{
-  margin-left: 300px;
+  margin-left: 20%;
 }
 
 .main-speech-img{
@@ -195,7 +126,7 @@
 .main-speech-name{
   font-size: 30px;
   font-weight: 600;
-  margin-left: 10px
+  margin-left: 10%;
 }
 
 
@@ -209,7 +140,7 @@
   background: skyblue;
   border: solid 3px skyblue;
   box-sizing: border-box;
-  width: 600px;
+  width: 65%;
   padding: 10px 30px;
   border-radius: 30px;
 }
@@ -228,8 +159,8 @@
 
 .main-speech-wrapper button{
   padding: 7px;
-  margin-left: 500px;
-  margin-top: 3px;
+  margin-left: 60%;
+  margin-top: 5%;
 }
 
 #mainSpeech9{
